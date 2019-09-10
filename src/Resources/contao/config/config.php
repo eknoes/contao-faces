@@ -1,5 +1,5 @@
 <?php
-$GLOBALS['TL_CTE']['content']['faces'] = 'Eknoes\ContaoFaces\FacesElem';
+$GLOBALS['TL_CTE']['content']['faces'] = 'Eknoes\ContaoFaces\ContentElement\FacesElem';
 
 $GLOBALS['BE_MOD']['content']['faces'] = array(
   'tables' => array(

@@ -4,6 +4,7 @@ namespace Eknoes\ContaoFaces\ContentElement;
 use Contao\BackendTemplate;
 use Contao\ContentElement;
 use Contao\FilesModel;
+use Contao\FrontendTemplate;
 
 class FacesElem extends ContentElement
 {
@@ -69,7 +70,7 @@ class FacesElem extends ContentElement
       }
 
 
-      $this->Template = new \BackendTemplate($this->strTemplate);
+      $this->Template = new FrontendTemplate($this->strTemplate);
 
       $staffIds = unserialize($this->staff_id);
       $people = array();
