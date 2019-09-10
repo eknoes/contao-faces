@@ -1,0 +1,22 @@
+<div class="ce_faces ce_faces_standard">
+  <?php if(!empty($this->headline)) { ?><h1><?= $this->headline ?></h1><?php } ?>
+  <?php foreach ($this->people as $key => $value) {
+    $current = $value;
+  ?>
+    <div id="staff<?= $key ?>" class="row">
+      <div class="small-12 columns">
+        <h2><?= $current['fullname'] ?></h2>
+      </div>
+      <div class="small-4 large-3 columns">
+        <img src="<?= $current['portrait'] ?>" style="float: left; width: 110px; height: auto;" alt="Portrait of <?= $current['fullname'] ?>">
+      </div>
+      <div class="small-8 large-9 columns">
+        <?= $current["contactblock"]; ?>
+        <?= $current["adressblock"]; ?>
+      </div>
+      <div class="small-12 columns">
+        <?= $current["detailsblock"]; ?>
+      </div>
+    </div>
+  <?php } ?>
+</div>
