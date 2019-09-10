@@ -28,5 +28,5 @@ $GLOBALS['TL_DCA'][$strName]['fields']['staff_more'] = array(
 );
 
 
-$GLOBALS['TL_DCA'][$strName]['palettes']['faces'] = "{type_legend},type;headline,staff_id,staff_render,staff_more";
+$GLOBALS['TL_DCA'][$strName]['palettes']['faces'] = "{type_legend},type;headline;staff_id,staff_render,staff_more";
 ?>
