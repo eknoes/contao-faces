@@ -1,7 +1,11 @@
 <?php
 namespace Eknoes\ContaoFaces\ContentElement;
 
-class FacesElem extends \ContentElement
+use Contao\BackendTemplate;
+use Contao\ContentElement;
+use Contao\FilesModel;
+
+class FacesElem extends ContentElement
 {
 
     /**
@@ -29,7 +33,7 @@ class FacesElem extends \ContentElement
     private function genBeOutput()
     {
         $this->strTemplate          = 'be_wildcard';
-        $this->Template             = new \BackendTemplate($this->strTemplate);
+        $this->Template             = new BackendTemplate($this->strTemplate);
         $this->Template->title      = $this->headline;
         $this->Template->wildcard = "<i>" . $this->staff_render . " FacesElement</i><br />";
 
@@ -114,7 +118,7 @@ class FacesElem extends \ContentElement
             'adressblock' => $adressblock,
             'contactblock' => $contactblock,
             'detailsblock' => $detailsblock,
-            'portrait' => $result->portrait ? \FilesModel::findByUuid($result->portrait)->path : '/files/Images/people/avatar-icon-girlie.png',
+            'portrait' => $result->portrait ? FilesModel::findByUuid($result->portrait)->path : '/files/Images/people/avatar-icon-girlie.png',
            );
         }
       } else {

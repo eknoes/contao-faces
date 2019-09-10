@@ -9,7 +9,7 @@ $GLOBALS['TL_DCA'][$strName]['fields']['staff_id'] = array(
   'sql' => 'text NULL',
   'inputType' => 'select',
   'foreignKey'              => "tl_ce_faces.CONCAT(title, ' ', surname, ' ', lastname)",
-  'eval' => array("multiple" => true, "chosen" => true)
+  'eval' => array("multiple" => true, "chosen" => true, "tl_class" => "w100")
 );
 $GLOBALS['TL_DCA'][$strName]['fields']['staff_render'] = array(
   'label' => array('Style', 'Popup is a simple list of names where you can access more information after clicking the name in a popup. Accordion is a name list, where you can access more information in accordion-stlye. '),
