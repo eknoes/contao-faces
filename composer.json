@@ -11,11 +11,9 @@
     ],
     "require": {
         "php": "^5.6 || ^7.0",
-        "contao/core-bundle": "^4.4",
-        "symfony/framework-bundle": "^3.3"
+        "contao/core-bundle": "^4.4"
     },
     "conflict": {
-        "contao/core": "*",
         "contao/manager-plugin": "<2.0 || >=3.0"
     },
     "require-dev": {
