@@ -52,63 +52,63 @@ $GLOBALS['TL_DCA'][$strName] = array(
   'fields' => array(
     'id' => array(
 			'sql'                     => "int(10) unsigned NOT NULL auto_increment"
-		),
-		'tstamp' => array(
-			'sql'                     => "int(10) unsigned NOT NULL default '0'"
-		),
+    ),
+    'tstamp' => array(
+        'sql'                     => "int(10) unsigned NOT NULL default '0'"
+    ),
     'lastname' => array(
       'label' => array('Last name', ''),
       'inputType' => 'text',
       'eval' => array('mandatory' => true, 'tl_class' => 'w50'),
-      'sql'                     => "varchar(100) NOT NULL",
+      'sql'                     => "varchar(100) NULL",
     ),
     'surname' => array(
       'label' => array('First name', ''),
       'inputType' => 'text',
       'eval' => array('mandatory' => true, 'tl_class' => 'w50'),
-      'sql'                     => "varchar(100) NOT NULL"
+      'sql'                     => "varchar(100) NULL"
     ),
     'title' => array(
       'label' => array('Title', ''),
       'inputType' => 'text',
       'eval' => array('mandatory' => false),
-      'sql'                     => "varchar(100) NOT NULL"
+      'sql'                     => "varchar(100) NULL"
     ),
     'position' => array(
       'label' => array('Position', 'e.g. Secretary, Research Assistant, etc.'),
       'inputType' => 'text',
       'eval' => array('mandatory' => false, 'tl_class' => 'long'),
-      'sql'                     => "varchar(100) NOT NULL"
+      'sql'                     => "varchar(100) NULL"
     ),
     'mail' => array(
       'label' => array('E-Mail', 'E-Mail adress'),
       'inputType' => 'text',
       'eval' => array('mandatory' => false),
-      'sql'                     => "varchar(100) NOT NULL"
+      'sql'                     => "varchar(100) NULL"
     ),
     'telephone' => array(
       'label' => array('Telephone', 'Telephone number'),
       'inputType' => 'text',
       'eval' => array('mandatory' => false, 'tl_class' => 'w50'),
-      'sql'                     => "varchar(100) NOT NULL"
+      'sql'                     => "varchar(100) NULL"
     ),
     'fax' => array(
       'label' => array('Fax', 'Fax number'),
       'inputType' => 'text',
       'eval' => array('mandatory' => false, 'tl_class' => 'w50'),
-      'sql'                     => "varchar(100) NOT NULL"
+      'sql'                     => "varchar(100) NULL"
     ),
     'adress' => array(
       'label' => array('Address', ''),
       'inputType' => 'textarea',
       'eval' => array('mandatory' => false),
-      'sql'                     => "text NOT NULL"
+      'sql'                     => "text NULL"
     ),
     'room' => array(
       'label' => array('Room Number', ''),
       'inputType' => 'text',
       'eval' => array('mandatory' => false),
-      'sql'                     => "text NOT NULL"
+      'sql'                     => "text NULL"
     ),
     'portrait' => array(
       'label' => array('Portrait', 'A Portrait of the person, best at 110px * 155px'),
@@ -128,13 +128,13 @@ $GLOBALS['TL_DCA'][$strName] = array(
       'label' => array('Link', 'URL to e.g. Chair Page, personal homepage, etc.'),
       'inputType' => 'text',
       'eval' => array('mandatory' => false, 'tl_class' => 'long'),
-      'sql'                     => "varchar(255) NOT NULL"
+      'sql'                     => "varchar(255) NULL"
     ),
     'linkText' => array(
       'label' => array('Label', 'Label for the link'),
       'inputType' => 'text',
       'eval' => array('mandatory' => false),
-      'sql'                     => "varchar(100) NOT NULL"
+      'sql'                     => "varchar(100) NULL"
     ),
     'text' => array(
       'label' => array('Text', 'For more details a text can be added. It is only shown, when the \'show details\'-checkbox is true.'),
