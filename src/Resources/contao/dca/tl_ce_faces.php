@@ -72,12 +72,12 @@ $GLOBALS['TL_DCA'][$strName] = array(
       'label' => array('Title', ''),
       'inputType' => 'text',
       'eval' => array('mandatory' => false),
-      'sql'                     => "varchar(100) NULL"
+      'sql'                     => "varchar(100) DEFAULT ''"
     ),
     'position' => array(
       'label' => array('Position', 'e.g. Secretary, Research Assistant, etc.'),
       'inputType' => 'text',
-      'eval' => array('mandatory' => false, 'tl_class' => 'long'),
+      'eval' => array('mandatory' => false, 'tl_class' => 'clr'),
       'sql'                     => "varchar(100) NULL"
     ),
     'mail' => array(
