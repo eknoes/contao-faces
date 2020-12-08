@@ -72,7 +72,7 @@ $GLOBALS['TL_DCA'][$strName] = array(
       'label' => array('Title', ''),
       'inputType' => 'text',
       'eval' => array('mandatory' => false),
-      'sql'                     => "varchar(100) DEFAULT ''"
+      'sql'                     => "varchar(100) NOT NULL DEFAULT ''"
     ),
     'position' => array(
       'label' => array('Position', 'e.g. Secretary, Research Assistant, etc.'),
