@@ -1,5 +1,5 @@
 <div class="ce_faces ce_faces_popup">
-  <?php if(!empty($this->headline)) { ?><h1><?= $this->headline ?></h1><?php } ?>
+  <?php if(!empty($this->headline)) { ?><<?= $this->hl ?>><?= $this->headline ?></<?= $this->hl ?>><?php } ?>
   <ul>
     <?php foreach ($this->people as $key => $value) {
       $current = $value;
