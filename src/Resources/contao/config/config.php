@@ -7,4 +7,9 @@ $GLOBALS['BE_MOD']['content']['faces'] = array(
   )
 );
 
+  if (TL_MODE == 'FE') {
+    $GLOBALS['TL_CSS'][] = 'bundles/contaofaces/faces.css|static';
+  }
+
+
 ?>
